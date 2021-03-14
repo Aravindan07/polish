@@ -98,12 +98,12 @@ body {
 	margin-bottom: var(--margin-bottom-medium);
 }
 
-.ml__medium {
-	margin-left: 1rem;
+.margin__lr__medium {
+	margin: 0 1rem;
 }
 
-.mr__medium {
-	margin-right: 1rem;
+.end__of__div {
+	margin-bottom: 2rem;
 }
 
 .heading {
@@ -120,6 +120,8 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	grid-area: navbar;
+	position: fixed;
+	top: 0;
 }
 
 .nav__image {
@@ -242,4 +244,28 @@ aside {
 
 main {
 	grid-area: main;
+}
+
+.code {
+	background-color: var(--font-color);
+	color: var(--background-color);
+	border-radius: 1rem;
+	width: 100%;
+	min-height: 100px;
+}
+
+code {
+	direction: ltr;
+	unicode-bidi: bidi-override;
+}
+
+.avatar__large {
+	width: 20px;
+	height: 20px;
+}
+
+.avatar__medium {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
 }
