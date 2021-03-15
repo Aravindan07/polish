@@ -220,26 +220,19 @@
 					into your HTML boilerplate code.
 				</p>
 				<br />
-				<div class="code padding__large">
-					<pre>
-						<code>
-<span>&lt;!DOCTYPE html></span>
-<span>&lt;html></span>
-<span>&lt;head></span>
-<span> &lt;!-- Required meta tags --></span>
-<span>&lt;meta charset="UTF-8" /></span>
-<span>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /></span>
-<span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /></span>
-<span> &lt;!-- Polish CSS --></span>
-<span>&lt;link rel="stylesheet" href="https://www.polish-ui.netlify.app/index.css" /></span>
-<span>&lt;/head></span>
-<span>&lt;body></span>
-<span> &lt;!-- Optional Javascript --></span>
-<span>&lt;script src="https://www.polish-ui.netlify.app/index.js">&lt;/script></span>
-<span>&lt;/body></span>
-<span>&lt;/html></span>
-						</code>
-					</pre>
+				<div class="code padding__large display__flex__row__center">
+					<iframe
+						src="https://carbon.now.sh/embed?bg=rgba%2831%2C129%2C109%2C1%29&t=night-owl&wt=none&l=htmlmixed&ds=false&dsyoff=20px&dsblur=68px&wc=false&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=143%25&si=false&es=2x&wm=false&code=%250A%253Cdiv%253E%250A%2520%2520%253Ch1%253EHello%2520World%253C%252Fh1%253E%250A%2520%2520%253Cp%253EThis%2520is%2520a%2520paragraph%2520tag%21%253C%252Fp%253E%250A%253C%252Fdiv%253E"
+						style="
+							width: 428px;
+							height: 256px;
+							border: 0;
+							transform: scale(1);
+							overflow: hidden;
+						"
+						sandbox="allow-scripts allow-same-origin"
+					>
+					</iframe>
 				</div>
 				<br />
 				<p>And Voila! now you have the power of Polish UI in your project.</p>
@@ -273,14 +266,71 @@
 
 				<h2 class="margin__tb__medium letter__spacing__medium">Avatar Fallback</h2>
 				<div class="display__flex__row__center">
-					<img
-						class="avatar__medium margin__lr__medium"
-						src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fgeheugenvanoost.amsterdam%2Fpage%2F78882%2Fcustom-avatar-fallback&psig=AOvVaw0z3k8tDyZIAGQkpm1_u4-9&ust=1615803970031000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMi_rIjJr-8CFQAAAAAdAAAAABAD"
-						alt="Fallback Avatar"
-					/>
+					<div class="img__background rounded__background display__flex__column__center">
+						<img
+							class="avatar__medium margin__lr__medium"
+							src="./icons/avatar-1.svg"
+							alt="Fallback Avatar"
+						/>
+					</div>
+
+					<div
+						class="white__img__background rounded__background display__flex__column__center margin__lr__medium"
+					>
+						<img
+							class="avatar__medium margin__lr__medium"
+							src="./icons/developer-1.svg"
+							alt="Fallback Avatar"
+						/>
+					</div>
 				</div>
 			</div>
+
 			<!-- End of Avatar Div -->
+			<div id="alert" class="end__of__div">
+				<h1 class="margin__tb__medium heading letter__spacing__medium">Alert</h1>
+				<p class="font__size__larger line__height--normal letter__spacing__medium">
+					An alert displays a short, important message in a way that attracts the user's
+					attention without interrupting the user's task. Alerts are used to communicate a
+					state that affects a system, feature or page.
+				</p>
+				<div class="display__flex__column__center">
+					<div
+						class="alert alert__success margin__tb__medium padding_medium letter__spacing__medium"
+					>
+						This is a success alert!
+						<img
+							class="avatar__small c__pointer"
+							src="./icons/cancel.svg"
+							alt="Cancel icon"
+						/>
+					</div>
+					<div
+						class="alert alert__error margin__tb__medium padding_medium letter__spacing__medium"
+					>
+						Oops! An Error occurred.
+						<img
+							class="avatar__small c__pointer"
+							src="./icons/cancel.svg"
+							alt="Cancel icon"
+						/>
+					</div>
+					<div
+						class="alert alert__warning margin__tb__medium padding_medium letter__spacing__medium"
+					>
+						This is a warning alert!
+						<img
+							class="avatar__small c__pointer"
+							src="./icons/cancel.svg"
+							alt="Cancel icon"
+						/>
+					</div>
+				</div>
+			</div>
+			<!-- Start of Alert Div -->
+
+			<div></div>
+			<!-- End of Alert Div -->
 		</main>
 	</body>
 </html>
