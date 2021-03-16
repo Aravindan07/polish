@@ -89,8 +89,16 @@ body {
 	text-transform: uppercase;
 }
 
+.margin__medium {
+	margin: 1rem;
+}
+
 .margin__tb__medium {
 	margin: 1rem 0;
+}
+
+.margin__tb__small {
+	margin: 0.5rem 0;
 }
 
 .mb__small {
@@ -99,6 +107,10 @@ body {
 
 .mb__medium {
 	margin-bottom: var(--margin-bottom-medium);
+}
+
+.margin__lr__small {
+	margin: 0 0.5rem 0 1rem;
 }
 
 .margin__lr__medium {
@@ -197,18 +209,44 @@ body {
 .button {
 	outline: none;
 	border: none;
+	font-size: var(--font-size-medium);
+	border-radius: 5px;
+	background-color: var(--navbar-button-color);
+	padding: 0.7rem;
+	cursor: pointer;
+	letter-spacing: 1px;
 }
 
 .button__primary {
 	color: var(--background-color);
 	background-color: var(--navbar-button-color);
-	padding: 0.4rem;
-	border-radius: 5px;
 }
 
-.button__primary:hover {
-	transform: scale(1.03);
+.button__error {
+	color: var(--background-color);
+	background-color: var(--complementary-color);
+}
+
+.button:hover {
+	transform: scale(1);
 	box-shadow: 0 0 5px #052e25;
+}
+
+.outlined__button {
+	outline: none;
+	border: none;
+	font-size: var(--font-size-medium);
+	border-radius: 5px;
+	padding: 0.7rem;
+	cursor: pointer;
+	letter-spacing: 1px;
+	background-color: var(--background-color);
+	color: var(--font-color);
+	border: 1px solid var(--primary-color);
+}
+
+.outlined__button:hover {
+	background: #dffcee;
 }
 
 .display__flex__row__center {
@@ -315,4 +353,68 @@ code {
 .alert__warning {
 	background-color: var(--alert-warning-background);
 	color: var(--font-color);
+}
+
+.badge {
+	padding: 0.5rem;
+	font-size: var(--font-size-medium);
+	font-weight: var(--font-weight-xl);
+	border-radius: 0px 10px 10px 0px;
+}
+
+.badge__success {
+	color: var(--background-color);
+	background: var(--primary-color);
+}
+
+.badge__error {
+	background: #d1d5db;
+	color: var(--font-color);
+}
+
+.badge__warning {
+	color: var(--font-color);
+	background: #fde68a;
+}
+
+.card {
+	max-width: 250px;
+	height: 400px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+	background-color: #fff;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.image-container {
+	width: 100%;
+	height: 65%;
+	border-radius: 10px;
+}
+
+.card__body {
+	min-height: auto;
+	margin: 4px 0 0 1px;
+	padding: 1rem 0.5rem;
+	flex: 1 1 auto;
+}
+
+.image-container img {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px 10px 0 0;
+}
+
+.highlighted__price {
+	background-color: #fad202;
+	font-size: 13px;
+	padding: 0.5rem;
+	border-radius: 4px;
+}
+
+.price__tag {
+	font-size: 13px;
+	display: flex;
+	align-items: center;
 }
