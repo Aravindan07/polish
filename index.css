@@ -35,7 +35,7 @@ body {
 	overflow-y: auto;
 	display: grid;
 	grid-template-columns: 20% auto;
-	grid-template-rows: 50px auto;
+	grid-template-rows: minmax(50px, 90px) auto;
 	grid-template-areas:
 		"navbar navbar"
 		"sidebar main";
@@ -146,11 +146,13 @@ body {
 	position: fixed;
 	top: 0;
 	z-index: 3;
+	padding: 0.5rem;
 }
 
 .nav__image {
 	max-width: 100%;
 	max-height: 100%;
+	margin-right: 0.5rem;
 }
 
 .nav__image__text__container {
@@ -220,7 +222,7 @@ body {
 	font-size: var(--font-size-medium);
 	border-radius: 5px;
 	background-color: var(--navbar-button-color);
-	padding: 0.7rem;
+	padding: 0.4rem 0.7rem;
 	cursor: pointer;
 	letter-spacing: 1px;
 }
@@ -312,6 +314,10 @@ aside {
 	top: 50px;
 	overflow: auto;
 	z-index: 5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 main {
@@ -639,7 +645,7 @@ main {
 	body {
 		display: grid;
 		grid-template-columns: 100%;
-		grid-template-rows: auto 90%;
+		grid-template-rows: minmax(60px, 90px) 90%;
 		grid-template-areas:
 			"navbar"
 			"main";
@@ -650,18 +656,17 @@ main {
 		z-index: 0;
 	}
 	.navbar {
-		min-height: 70px;
-		flex-direction: column;
+		min-height: 90px;
 	}
 
 	.nav__image__text__container {
-		height: 1.5rem;
+		height: 1.8rem;
 	}
 	.navbar__contact__image {
 		width: 50px;
 	}
 	.navbar__contact__container {
-		max-height: 60%;
+		max-height: 1.8rem;
 	}
 	.navbar__link {
 		height: 100%;
@@ -684,5 +689,21 @@ main {
 	}
 	.button {
 		display: none;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	body {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: minmax(60px, 90px) 90%;
+		grid-template-areas:
+			"navbar"
+			"main";
+	}
+	aside {
+		display: none;
+		position: static;
+		z-index: 0;
 	}
 }
