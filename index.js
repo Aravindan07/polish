@@ -3,7 +3,7 @@ const closeModalBtn = document.getElementById("close__modal");
 const modal = document.getElementById("modal__container");
 const closeSidebarBtn = document.getElementById("close-sidebar-icon");
 const clickSidebar = document.getElementById("click-sidebar");
-const openSidebar = document.getElementById("open-sidebar");
+const openSidebarIcon = document.getElementById("open-sidebar-icon");
 const x = window.matchMedia("(min-width: 900px)");
 
 openModalBtn.addEventListener("click", () => {
@@ -25,7 +25,7 @@ closeSidebarBtn.addEventListener("click", () => {
 	clickSidebar.style.display = "none";
 });
 
-openSidebar.addEventListener("click", () => {
+openSidebarIcon.addEventListener("click", () => {
 	clickSidebar.style.display = "flex";
 });
 

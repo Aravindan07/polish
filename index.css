@@ -410,7 +410,6 @@ main {
 
 .card {
 	max-width: 250px;
-	/* height: 400px; */
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 	background-color: #fff;
 	border-radius: 10px;
@@ -680,7 +679,11 @@ main {
 	border: 2px solid var(--alert-error-background);
 }
 
-.click__sidebar {
+#click-sidebar {
+	display: none;
+}
+
+#open-sidebar-icon {
 	display: none;
 }
 
@@ -789,7 +792,7 @@ main {
 		border-radius: 50%;
 	}
 
-	.click__sidebar {
+	#click__sidebar {
 		width: 70%;
 		height: 100%;
 		display: flex;
@@ -812,6 +815,10 @@ main {
 	.close__icon__div img {
 		width: 30px;
 		height: 100%;
+	}
+
+	#open-sidebar-icon {
+		display: flex;
 	}
 }
 
@@ -853,5 +860,9 @@ main {
 	.close__icon__div img {
 		width: 30px;
 		height: 100%;
+	}
+
+	#open-sidebar-icon {
+		display: flex;
 	}
 }
